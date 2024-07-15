@@ -293,13 +293,29 @@ if و else
 </tr>
 <tr>
 <td width="168">
-<p>&nbsp;</p>
+<p>Liskov Substitution Principle
+<br>
+و
+<br>
+Interface Segregation Principle
+</p>
 </td>
 <td width="246">
-<p>&nbsp;</p>
+<p>
+وجود توابعی در interface
+که در کلاس فرزند پیاده سازی نشده اند.
+<br>
+استفاده از ساختار شرطی برای چک کردن نوع کلاس به جای استفاده از polymorphism
+در زمان اجرا.
+</p>
 </td>
 <td width="284">
-<p>&nbsp;</p>
+<p>
+حذف توابعی که concrete 
+هستند و مخصوص هر کلاس پیاده سازی شده اند و تبدیل آنها به توابعی انتزاعی که همه کلاس ها بتوانند از آن ارث بری کنند و بدنه آن را پیاده سازی کنند.
+<br>
+OrderService باید تنها دارای دو تابع payment و register  باشد.
+</p>
 </td>
 </tr>
 <tr>
