@@ -282,13 +282,14 @@ if و else
 </tr>
 <tr>
 <td width="168">
-<p>&nbsp;</p>
+<p>Open-Close Principle</p>
 </td>
 <td width="246">
-<p>&nbsp;</p>
+<p>برای افزودن روش‌های جدید نیاز است Main تغییر کند.</p>
 </td>
 <td width="284">
-<p>&nbsp;</p>
+<p>استفاده از OrderServiceFactory برای ایجاد نمونه‌های OrderService بدون تغییر در Main.java.
+</p>
 </td>
 </tr>
 <tr>
