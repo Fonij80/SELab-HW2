@@ -240,7 +240,7 @@ if و else
 <p><strong>موارد تحقق</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p>ماژول سطح بالا (Main.java) به انتزاع‌ها (OrderService) وابسته است و نه به پیاده‌سازی‌های خاص.</p>
 </td>
 </tr>
 <tr>
@@ -248,7 +248,7 @@ if و else
 <p><strong>موارد نقض</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p>Main.java هنوز نیاز به نمونه‌سازی از کلاس‌های خاص OrderService دارد که می‌توان آن را با استفاده از dependency injection بهبود داد.</p>
 </td>
 </tr>
 </tbody>
