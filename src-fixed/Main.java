@@ -8,6 +8,12 @@ import java.util.Scanner;
 
 public class Main {
 
+    private final OrderServiceFactory orderServiceFactory;
+
+    public Main(OrderServiceFactory orderServiceFactory) {
+        this.orderServiceFactory = orderServiceFactory;
+    }
+
     public static void main(String[] args) {
         Scanner scanner= new Scanner(System.in);
         OrderService orderService = null;
@@ -15,6 +21,9 @@ public class Main {
         Order order;
         int customerAnswerForOrder=0;
         int customerAnswerForPaymentMethod=0;
+
+        OrderServiceFactory orderServiceFactory = new OrderServiceFactory();
+        Main mainApp = new Main(orderServiceFactory);
 
         System.out.println("Enter Customer Name : ");
         customerName = scanner.nextLine();
