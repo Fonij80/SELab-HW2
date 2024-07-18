@@ -2,6 +2,7 @@ import PaymentServices.OnSiteOrderService;
 import PaymentServices.OnlineOrderService;
 import PaymentServices.OrderService;
 import PaymentServices.PhoneOrderService;
+import PaymentServices.OrderServiceFactory;
 
 import java.util.Scanner;
 
@@ -38,13 +39,17 @@ public class Main {
         //Step2 : Select Payment Method
         System.out.println("Enter Your Payment Method (1 for online, 2 for on-site, 3 for phone):");
         customerAnswerForPaymentMethod = scanner.nextInt();
-        if (customerAnswerForPaymentMethod == 1) {
-            orderService = new OnlineOrderService();
-        } else if (customerAnswerForPaymentMethod == 2) {
-            orderService = new OnSiteOrderService();
-        } else if (customerAnswerForPaymentMethod == 3) {
-            orderService = new PhoneOrderService();
-        }
+
+        // if (customerAnswerForPaymentMethod == 1) {
+        //     orderService = new OnlineOrderService();
+        // } else if (customerAnswerForPaymentMethod == 2) {
+        //     orderService = new OnSiteOrderService();
+        // } else if (customerAnswerForPaymentMethod == 3) {
+        //     orderService = new PhoneOrderService();
+        // }
+
+        orderService = OrderServiceFactory.getOrderService(customerAnswerForPaymentMethod);
+
         orderService.orderRegister(customerName);
 
         //Step3 : pay price
