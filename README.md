@@ -1,33 +1,11 @@
-به نام خدا
+# SE_Lab2
 
-# آشنایی با اصول شئ‌گرایی (موسوم به اصول SOLID)
+## آشنایی با اصول شئ‌گرایی (موسوم به اصول SOLID)
 
-## اهداف
-در این آزمایش هدف بر آن است که دانشجویان با به کارگیری اصول SOLID در یک پروژه‌ی عملی ساده آشنا شوند.
-
-## نیازمندی‌ها
-آشنایی اولیه با مفاهیم برنامه نویسی و طراحی شی‌گرا که دانشجویان قبلاً در درس برنامه‌سازی پیشرفته با آن آشنا شده‌اند.
-
-## ابزارهای مورد استفاده
-- یک Java IDE مانند IntelliJ IDEA و یا Eclipse به همراه jdk حداقل نسخه ۸
-
-## منابع آموزشی
-برای آشنایی با این اصول و آشنایی با منابع مناسب به [اینجا](https://github.com/ssc-public/Software-Engineering-Lab/blob/main/educational-resources/SOLID/README.md) مراجعه کنید.
-
-## مقدمه
-در این آزمایش شما خواهید آموخت که چگونه می‌توانید با به کارگیری اصول SOLID، نرم‌افزارهایی را بسازید که از نظر قابلیت نگهداری و بهبود، در وضعیت مطلوبی باشند و مدیریت تغییرات در آن‌ها به آسانی میسر باشد (شک نکنید که به کارگیری این اصول اساسی و بسیاری دیگر از اصول مهندسی نرم افزار، باعث تفاوت شما با سایر همکارانتان خواهد شد)
-
-## بخش اول: توضیحاتی پیرامون برنامه‌ی داده شده
-می‌توانید برنامه را از [اینجا](https://github.com/ssc-public/Software-Engineering-Lab/tree/main/base-projects/SOLID-Principles) بارگیری کنید.
-
-### مفروضات مسئله
-صورت آزمایش در درس افزار بارگزاری شده است و می‌توانید برای تحویل گزارش (با در نظر گرفتن ملاحظات گفته شده) از قالب های زیر استفاده کنید.
-
-## بخش دوم: دستور آزمایش
 
 ### گام ۱: افزودن یک روش پیام رسانی دیگر
 
-	تغییراتی را که در کد فعلی برنامه می‌دهید، در جدول زیر ثبت کنید و در نهایت تعداد کل تغییرات را اعلان کنید.
+تغییراتی را که در کد فعلی برنامه می‌دهید، در جدول زیر ثبت کنید و در نهایت تعداد کل تغییرات را اعلان کنید.
     - توجه: مواردی که به عنوان تغییرات باید اعلان شود شامل این موارد هستند:
       1. ساخت کلاس جدید
       2. افزودن تابع جدید به کلاس و یا واسط (برای توابع جدید صرفا اعلام تغییر کنید)
@@ -49,67 +27,252 @@
 <p><strong>شرحی کوتاه از تغییر</strong></p>
 </td>
 </tr>
+	
 <tr>
 <td width="64">
 <p><strong>۱</strong></p>
 </td>
 <td width="198">
-<p>MessageService</p>
+<p>PhoneOrderService</p>
 </td>
 <td width="141">
-<p>افزودن تابع ارسال پیام تلگرامی</p>
+<p>افزودن کلاس PhoneOrderService به پکیج PaymentServices</p>
 </td>
 <td width="292">
-<p>افزودن یک تابع void با عنوان sendTelegramMessage</p>
+<p>افزودن کلاس PhoneOrderService که واسط OrderService را پیاده‌سازی کرده است</p>
 </td>
 </tr>
 
 <tr>
 <td width="64">
-<p><strong>&nbsp;</strong></p>
+<p><strong>۲</strong></p>
 </td>
 <td width="198">
-<p>&nbsp;</p>
+<p>OrderService</p>
 </td>
 <td width="141">
-<p>&nbsp;</p>
+<p>افزودن تابع ثبت سفارش تلفنی</p>
 </td>
 <td width="292">
-<p>&nbsp;</p>
+<p>افزودن یک تابع void با عنوان phoneOrderRegister با ورودی نام مشتری</p>
 </td>
 </tr>
+
 <tr>
 <td width="64">
-<p><strong>&nbsp;</strong></p>
+<p><strong>۳</strong></p>
 </td>
 <td width="198">
-<p>&nbsp;</p>
+<p>OrderService</p>
 </td>
 <td width="141">
-<p>&nbsp;</p>
+<p>افزودن تابع پرداخت سفارش تلفنی</p>
 </td>
 <td width="292">
-<p>&nbsp;</p>
+<p>افزودن یک تابع void با عنوان phoneOrderPayment و با ورودی قیمت غذا</p>
 </td>
 </tr>
+
 <tr>
 <td width="64">
-<p><strong>&nbsp;</strong></p>
+<p><strong>۴</strong></p>
 </td>
 <td width="198">
-<p>&nbsp;</p>
+<p>PhoneOrderService</p>
 </td>
 <td width="141">
-<p>&nbsp;</p>
+<p>افزودن تابع ثبت سفارش حضوری</p>
 </td>
 <td width="292">
-<p>&nbsp;</p>
+<p>افزودن یک تابع void با عنوان onSiteOrderRegister با ورودی نام مشتری و بدنه‌ی خالی</p>
 </td>
 </tr>
+
+<tr>
+<td width="64">
+<p><strong>۵</strong></p>
+</td>
+<td width="198">
+<p>PhoneOrderService</p>
+</td>
+<td width="141">
+<p>افزودن تابع ثبت سفارش آنلاین</p>
+</td>
+<td width="292">
+<p>افزودن یک تابع void با عنوان onlineOrderRegister با ورودی نام مشتری و بدنه‌ی خالی</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>۶</strong></p>
+</td>
+<td width="198">
+<p>PhoneOrderService</p>
+</td>
+<td width="141">
+<p>افزودن تابع ثبت سفارش تلفنی</p>
+</td>
+<td width="292">
+<p>افزودن یک تابع void با عنوان phoneOrderRegister با ورودی نام مشتری که متنی را چاپ می‌کند</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>۷</strong></p>
+</td>
+<td width="198">
+<p>PhoneOrderService</p>
+</td>
+<td width="141">
+<p>افزودن تابع پرداخت سفارش حضوری</p>
+</td>
+<td width="292">
+<p>افزودن یک تابع void با عنوان onSiteOrderPayment با ورودی قیمت غذا و بدنه‌ی خالی</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>۸</strong></p>
+</td>
+<td width="198">
+<p>PhoneOrderService</p>
+</td>
+<td width="141">
+<p>افزودن تابع پرداخت سفارش آنلاین</p>
+</td>
+<td width="292">
+<p>افزودن یک تابع void با عنوان onlineOrderPayment با ورودی قیمت غذا و بدنه‌ی خالی</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>۹</strong></p>
+</td>
+<td width="198">
+<p>PhoneOrderService</p>
+</td>
+<td width="141">
+<p>افزودن تابع پرداخت سفارش تلفنی</p>
+</td>
+<td width="292">
+<p>افزودن یک تابع void با عنوان phoneOrderPayment با ورودی قیمت غذا که متنی را چاپ می‌کند</p>
+</td>
+</tr>
+
+
+<tr>
+<td width="64">
+<p><strong>۱۰</strong></p>
+</td>
+<td width="198">
+<p>OnSiteOrderService</p>
+</td>
+<td width="141">
+<p>افزودن تابع ثبت سفارش تلفنی</p>
+</td>
+<td width="292">
+<p>افزودن یک تابع void با عنوان phoneOrderRegister با ورودی نام مشتری و بدنه‌ی خالی</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>۱۱</strong></p>
+</td>
+<td width="198">
+<p>OnSiteOrderService</p>
+</td>
+<td width="141">
+<p>افزودن تابع پرداخت سفارش تلفنی</p>
+</td>
+<td width="292">
+<p>افزودن یک تابع void با عنوان phoneOrderPayment با ورودی قیمت غذا و بدنه‌ی خالی</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>۱۲</strong></p>
+</td>
+<td width="198">
+<p>OnlineOrderService</p>
+</td>
+<td width="141">
+<p>افزودن تابع ثبت سفارش تلفنی</p>
+</td>
+<td width="292">
+<p>افزودن یک تابع void با عنوان phoneOrderRegister با ورودی نام مشتری و بدنه‌ی خالی</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>۱۳</strong></p>
+</td>
+<td width="198">
+<p>OnlineOrderService</p>
+</td>
+<td width="141">
+<p>افزودن تابع پرداخت سفارش تلفنی</p>
+</td>
+<td width="292">
+<p>افزودن یک تابع void با عنوان phoneOrderPayment با ورودی قیمت غذا و بدنه‌ی خالی</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>۱۴</strong></p>
+</td>
+<td width="198">
+<p>Main</p>
+</td>
+<td width="141">
+<p>افزودن گزینه‌ی روش پرداخت تلفنی</p>
+</td>
+<td width="292">
+<p>افزودن گزینه‌ی 3 for phone به ورودی println خط ۳۹ برای اینکه بتوان روش پرداخت تلفنی را انتخاب کرد</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>۱۵</strong></p>
+</td>
+<td width="198">
+<p>Main</p>
+</td>
+<td width="141">
+<p>افزودن شرط انتخاب روش پرداخت تلفنی</p>
+</td>
+<td width="292">
+<p>افزودن شرط customerAnswerForPaymentMethod == 3 به خط ۴۷. در صورتی که مشتری گزینه‌ی ۳ را انتخاب کند بلاک مربوط به این شرط اجرا می‌شود و orderService آبجکتی از کلاس PhoneOrderService را ذخیره می‌کند و تابع ثبت سفارش تلفنی را با نام مشتری صدا می‌زند.</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>۱۶</strong></p>
+</td>
+<td width="198">
+<p>Main</p>
+</td>
+<td width="141">
+<p>افزودن شرط پرداخت سفارش تلفنی</p>
+</td>
+<td width="292">
+<p>در خط ۵۸ این شرط اضافه شده که اگر orderService از جنس PhoneOrderService بود یعنی مشتری روش پرداخت تلفنی را انتخاب کرده، پرداخت تلفنی با ورودی قیمت غذا انجام شود.</p>
+</td>
+</tr>
+
 </tbody>
 </table>
 
-مجموع تعداد تغییرات: ..............
+مجموع تعداد تغییرات: ۱۶
 
 ### گام ۲: تحلیل و وارسی برنامه از منظر تحقق و یا عدم تحقق اصول SOLID
 در خصوص این برنامه‌ای که نوشته شده بود و شما یک قابلیت به آن اضافه کردید، بر اساس اصول SOLID موارد نقض و یا محقق شدن هر کدام از آن اصول را بیان کنید. در بیان موارد تحقق و نقض، علت تحقق و یا نقض را نیز به صورت کامل توضیح دهید:
