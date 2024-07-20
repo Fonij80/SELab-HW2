@@ -447,13 +447,15 @@ if و else
 </tr>
 <tr>
 <td width="168">
-<p>&nbsp;</p>
+<p>Single Responsibility</p>
 </td>
 <td width="246">
-<p>&nbsp;</p>
+<p>انجام دو مسئولیت متفاوت ثبت سفارش و پرداخت در کلاس‌های OnlineOrderService, OnSiteOrderService, PhoneOrderService</p>
 </td>
 <td width="284">
-<p>&nbsp;</p>
+<p>
+	ساخت کلاس‌های جداگانه برای هر کدام از مسئولیت‌های ثبت سفارش آنلاین (OnlineOrderRegister)، پرداخت سفارش آنلاین (OnlineOrderPayment)، ثبت سفارش حضوری (OnSiteOrderRegister)، پرداخت سفارش حضوری (OnSiteOrderPayment)، ثبت سفارش تلفنی (PhoneOrderRegister)، پرداخت سفارش تلفنی (PhoneOrderPayment)
+</p>
 </td>
 </tr>
 <tr>
