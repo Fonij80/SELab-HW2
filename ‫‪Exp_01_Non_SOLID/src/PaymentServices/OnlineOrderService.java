@@ -13,7 +13,6 @@ public class OnlineOrderService implements OrderService {
 
     @Override
     public void phoneOrderRegister(String customerName) {
-
     }
 
     @Override
@@ -28,7 +27,6 @@ public class OnlineOrderService implements OrderService {
 
     @Override
     public void phoneOrderPayment(int foodPrice) {
-
     }
 
 }
