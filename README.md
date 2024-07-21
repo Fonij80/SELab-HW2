@@ -466,7 +466,7 @@ if و else
 <p>برای افزودن روش‌های جدید نیاز است Main تغییر کند.</p>
 </td>
 <td width="284">
-<p>استفاده از OrderServiceFactory برای ایجاد نمونه‌های OrderService بدون تغییر در Main.java.
+<p>استفاده از Factoryها (OrderServiceFactory و OrderRegisterFactory) برای ایجاد نمونه‌ها بدون تغییر در Main.java.
 </p>
 </td>
 </tr>
